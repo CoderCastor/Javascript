@@ -9,7 +9,7 @@ const temperature = 41
 // }
 
 // console.log("Execute");
-// <, >, <=, >=, ==, !=, ===, !==
+// <, >, <=, >=, ==, !=, === (equity with data type checking), !==
 
 // const score = 200
 
@@ -23,7 +23,7 @@ const temperature = 41
 
 // const balance = 1000
 
-// if (balance > 500) console.log("test"),console.log("test2");
+// if (balance > 500) console.log("test"),console.log("test2");   bad practice  
 
 // if (balance < 500) {
 //     console.log("less than 500");

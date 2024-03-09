@@ -94,6 +94,11 @@ body {
   /* height: 23em;
     width: 4.1em; */
   border: solid 1px black;
+  font-size: large;
+  text-align: center;
+  font-size: 1.4em;
+  padding-top: 355px;
+  font-weight: 900;
 }
 
 .key:hover {

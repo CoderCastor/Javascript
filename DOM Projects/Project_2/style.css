@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(53, 53, 53);
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#error{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.arrowAnimation{
+    display: flex;
+    justify-content: space-around;
+}
+
+.arrow img{
+    height: 200px;
+    
+}
+
+.arrow{
+    margin-top: 100px;
+    transform: scale(.6);
+    animation: arroani 1.8s both ease 0s infinite;
+}
+
+@keyframes arroani {
+    0%{
+        margin-top: 100px;
+        transform: scale(.7);
+               
+    }
+    50%{
+        margin-top: 0px;
+        transform: scale(.9);
+    }
+    100%{
+        margin-top: 100px;
+        transform: scale(.7);       
+    }
+    
+}
+.container{
+    height: 42vh;
+    width: 70vw;
+    position: absolute;
+    z-index: 1;
+}
+
+@media (max-width: 1919px) and (min-width:450px) and (max-height: 1079px) {
+    #error{
+        z-index: 1;
+        background-image: linear-gradient(to right top, #de007e, #d10293, #be19a7, #a32dbb, #7d3dcc, #7140d3, #6244d9, #4f47e0, #6d3fe0, #8635de, #9c25db, #b100d6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 6em;
+        color: white;
+    }
+    .mobile{
+        display: none;
+    }
+    .container{
+        display: none;
+    }
+    
+}
+
+
+
+#whitekeys {
+  height: 42vh;
+  width: 70vw;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: repeat(17, 1fr);
+  position: absolute;
+}
+
+.key {
+  background-color: rgb(255, 255, 255);
+  /* height: 23em;
+    width: 4.1em; */
+  border: solid 1px black;
+}
+
+.key:hover {
+  background-color: #9e9e9eb9;
+  box-shadow: inset 0px 0px 9px 1px white;
+}
+
+#blackkeys{
+    position: absolute;
+    height: 2vh;
+    width: 70vw;
+    display: flex;
+    gap: 6.6em;
+    transform: translateX(56px);
+}
+
+.kee{
+    height: 16em;
+    width: 46px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 4px;
+}
+
+.kee:hover{
+    box-shadow: inset 0px 0px 9px 1px white;
+
+}
+
+#three1, #three2{
+    gap: 2.5em;
+}
+
+.bkee{
+    display: flex;
+    gap: 2em;
+    
+}
+
+@media (max-width: 450px) {
+
+    body {
+        box-sizing: border-box;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: row;
+        min-height: 100vh;
+        justify-content: center;
+        align-items: center;
+        
+      }
+      .alert{
+        display: none;
+      }
+      .mobile{
+        text-align: center;
+        font-size: 2em;
+        height: 15vh;
+      }
+      #error{
+        z-index: 1;
+        background-image: linear-gradient(to right top, #de007e, #d10293, #be19a7, #a32dbb, #7d3dcc, #7140d3, #6244d9, #4f47e0, #6d3fe0, #8635de, #9c25db, #b100d6);
+        display: flex;
+        height: 100%;
+        width: auto;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+    .arrowAnimation{
+        width: 100%;
+    }
+    .arrowAnimation img{
+        height: 100px;
+    }
+    .container{
+        display: none;
+    }
+      /* .container{
+        margin-top: -15vh;
+        height: 90vh;
+        width: 70vw;
+        position: relative;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        background-color: green;
+    } */
+
+      #whitekeys {
+        height: 80vh;
+        width: 70vw;
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+      }
+
+      .key{
+        height: 100%;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+      }
+
+      #blackkeys{
+        position: relative;
+        height: 100%;
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: start;
+        transform: translateX(-56px);
+        
+        
+        z-index: 1;
+        gap:10px;
+        overflow: scroll;
+        background: transparent;
+        
+    }
+
+    .bkee{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 10vh;
+        width: 100%;
+        
+    }
+
+    .kee{
+        height: 1.1em;
+        width: 200px;
+        background-color: rgb(0, 0, 0);
+        border-radius: 4px;
+    }
+
+    #three1, #three2{
+        padding-top: 6px;
+        height: 7em;
+        gap: 1.5em;
+        transform: translateY(-3px);
+    }  
+
+    #three1{
+        margin-bottom: 10px;
+        gap: 1.4em;
+    }
+    #tow1,#two2,#two3{
+        display: flex;
+        justify-content: space-around;
+        gap: 0em;
+    }
+    
+
+}

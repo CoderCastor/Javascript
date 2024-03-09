@@ -15,6 +15,7 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
+            gap: 2em;
         }
         .box{
             height: 10vh;
@@ -22,6 +23,7 @@
             background-color: red;
             border-radius: 10vw;
             display: flex;
+            gap: 3em;
             justify-content: center;
             align-items: center;
         }
@@ -29,16 +31,25 @@
             font-size: 1.5rem;
             text-decoration: none;
             color: white;
-            padding-left: 30px;
+            padding: 30px;
+        }
+        #box2{
+            background-color: rgb(66, 0, 141);
         }
         @media (max-width: 450px) {
             .box{
                 height: 20vh;
+            }
+            body{
+                gap: 2em;
+                display: flex;
+                flex-direction: column;
             }
         }
     </style>
 </head>
 <body>
     <div class="box"><a href="./DOM Projects/Project_1/index1.html">Project 1 : Simple Colour Changer</a></div>
+    <div class="box" id="box2"><a href="./DOM Projects/Project_2/index2.html">Project 2 : Grand Piano</a></div>
 </body>
 </html>
